@@ -1,5 +1,6 @@
 package com.noobnuby.plugin.event
 
+import com.sun.org.apache.bcel.internal.classfile.LocalVariable
 import net.kyori.adventure.text.Component
 import org.bukkit.Location
 import org.bukkit.event.EventHandler
@@ -13,6 +14,7 @@ class JoinQuit: Listener {
         val p = e.player
         e.joinMessage(Component.text(""))
         p.teleport(Location(p.world,0.0,80.0,0.0))
+        e.player.setBedSpawnLocation(Location(p.world,0.0,90.0,0.0),true)
     }
 
     @EventHandler

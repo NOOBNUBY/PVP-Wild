@@ -10,8 +10,6 @@ class Death: Listener {
     @EventHandler
     fun onDeath(e: PlayerDeathEvent) {
         val p = e.entity
-
         p.gameMode = GameMode.SPECTATOR
-        p.teleport(Location(p.world,0.0,100.0,0.0))
     }
 }
