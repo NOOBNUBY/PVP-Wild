@@ -1,5 +1,6 @@
 package com.noobnuby.plugin.event
 
+import net.kyori.adventure.text.Component
 import org.bukkit.Location
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -10,12 +11,12 @@ class JoinQuit: Listener {
     @EventHandler
     fun onJoin(e: PlayerJoinEvent) {
         val p = e.player
-        e.joinMessage()
+        e.joinMessage(Component.text(""))
         p.teleport(Location(p.world,0.0,80.0,0.0))
     }
 
     @EventHandler
     fun onQuit(e: PlayerQuitEvent) {
-        e.quitMessage()
+        e.quitMessage(Component.text(""))
     }
 }
