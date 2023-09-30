@@ -3,10 +3,12 @@ package com.noobnuby.plugin.events
 import org.bukkit.Sound
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.NamedTextColor
+import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.block.BlockPlaceEvent
 
 class BlockOnPlace: Listener {
+    @EventHandler
     fun onBlockPlace(e: BlockPlaceEvent) {
         if(e.blockPlaced.location.y >= 100) {
             e.isCancelled = true

@@ -25,6 +25,7 @@ class Main:JavaPlugin() {
             registerEvents(BreakBlock(),this@Main)
             registerEvents(MobSpawn(),this@Main)
             registerEvents(WeatherChange(), this@Main)
+            registerEvents(BlockOnPlace(),this@Main)
             getCommand("start")?.setExecutor(Start())
         }
 
