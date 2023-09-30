@@ -1,6 +1,5 @@
-package com.noobnuby.plugin.event
+package com.noobnuby.plugin.events
 
-import com.sun.org.apache.bcel.internal.classfile.LocalVariable
 import net.kyori.adventure.text.Component
 import org.bukkit.Location
 import org.bukkit.event.EventHandler

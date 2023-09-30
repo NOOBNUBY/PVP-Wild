@@ -1,4 +1,4 @@
-package com.noobnuby.plugin.event
+package com.noobnuby.plugin.events
 
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
