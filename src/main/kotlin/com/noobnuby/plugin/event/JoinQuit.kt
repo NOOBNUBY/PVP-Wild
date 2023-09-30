@@ -13,8 +13,8 @@ class JoinQuit: Listener {
     fun onJoin(e: PlayerJoinEvent) {
         val p = e.player
         e.joinMessage(Component.text(""))
-        p.teleport(Location(p.world,0.0,80.0,0.0))
-        e.player.setBedSpawnLocation(Location(p.world,0.0,90.0,0.0),true)
+        p.teleport(Location(p.world,0.0,150.0,0.0))
+        e.player.setBedSpawnLocation(Location(p.world,0.0,150.0,0.0),true)
     }
 
     @EventHandler

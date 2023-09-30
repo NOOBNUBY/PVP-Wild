@@ -13,12 +13,14 @@ java.toolchain {
 
 repositories {
     mavenCentral()
-    maven("https://repo.papermc.io/repository/maven-public/")
+    maven { url = uri("https://papermc.io/repo/repository/maven-public/") }
+    maven { url = uri("https://maven.enginehub.org/repo/") }
 }
 
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(kotlin("reflect"))
+    implementation("com.sk89q.worldedit:worldedit-bukkit:7.2.15")
     compileOnly("com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
 }
 

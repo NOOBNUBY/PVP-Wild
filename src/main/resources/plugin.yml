@@ -8,3 +8,6 @@ author: noobnuby
 libraries:
   - org.jetbrains.kotlin:kotlin-stdlib:1.9.0
   - io.github.monun:kommand-core:3.1.7
+
+commands:
+  start:
