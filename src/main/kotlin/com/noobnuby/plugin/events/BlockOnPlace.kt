@@ -13,7 +13,7 @@ class BlockOnPlace: Listener {
         if(e.blockPlaced.location.y >= 100) {
             e.isCancelled = true
             e.player.playSound(e.player.location, Sound.ENTITY_ENDERMAN_TELEPORT, 0.5f, 1f)
-            e.player.sendMessage(Component.text("Y 좌표 100 이상에서는 블럭을 설치할 수 없습니다.").color(NamedTextColor.GREEN))
+            e.player.sendMessage(Component.text("Y 좌표 100 이상에서는 블럭을 설치할 수 없습니다.").color(NamedTextColor.RED))
         }
     }
 }
