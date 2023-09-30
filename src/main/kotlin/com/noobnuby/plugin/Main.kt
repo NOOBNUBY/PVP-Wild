@@ -25,11 +25,12 @@ class Main:JavaPlugin() {
             private set
     }
 
+    //TODO : 몹 스폰 방지
+    //TODO : 스코어보드
+    //TODO : 킬로그
     override fun onEnable() {
         instance = this
-
         logger.info("Enable plugin!")
-
         saveResource("main.schem", false)
 
         server.pluginManager.apply {
@@ -41,68 +42,4 @@ class Main:JavaPlugin() {
 
         Schem().loadSchem()
     }
-
-//    private fun loadSchematicAtLocation() {
-//        val file = File(dataFolder, "main.schem")
-//        val bukkitWorld = server.getWorld("world") // Bukkit's world object
-//
-//        if (!file.exists()) {
-//            logger.info("main.schem 파일이 data 폴더 내부에 존재하지 않습니다.")
-//            return
-//        }
-//
-//        try {
-//            val format = ClipboardFormats.findByFile(file)
-//
-//            if (format == null) {
-//                logger.severe("Unable to determine the format of the schematic file.")
-//                return
-//            }
-//
-//            var clipboard: Clipboard? = null
-//
-//            FileInputStream(file).use { fis ->
-//                val reader = format.getReader(fis)
-//                clipboard = reader.read()
-//            }
-//
-//            // Convert Bukkit's world to WorldEdit's world.
-//            val worldEditWorld = BukkitAdapter.adapt(bukkitWorld)
-//
-//            WorldEdit.getInstance().newEditSession(worldEditWorld).use { editSession ->
-//                val operation: Operation = ClipboardHolder(clipboard)
-//                    .createPaste(editSession)
-//                    .to(BlockVector3.at(0.0, 150.0, 0.0))
-//                    .ignoreAirBlocks(false)
-//                    .build()
-//
-//                Operations.complete(operation)
-//            }
-//
-//            logger.info("Schematic was successfully pasted at the location.")
-//
-//        } catch (e: Exception) {
-//            e.printStackTrace()
-//            logger.severe("Failed to load and paste the schematic.")
-//        }
-//    }
-//
-//    private fun removeSchematicAtLocation() {
-//        val bukkitWorld = server.getWorld("world") // Bukkit's world object
-//
-//        // Convert Bukkit's world to WorldEdit's world.
-//        val worldEditWorld = BukkitAdapter.adapt(bukkitWorld)
-//
-//        // Define the region you want to clear.
-//        // This should be the same size and in the same location as your pasted schematic.
-//        val minPoint = BlockVector3.at(0.0, 80.0, 0.0)
-//        val maxPoint = BlockVector3.at(10.0, 90.0, 10.0)
-//        val regionToClear = CuboidRegion(minPoint, maxPoint)
-//
-//        WorldEdit.getInstance().newEditSession(worldEditWorld).use { editSession ->
-//            editSession.setBlocks(regionToClear, BlockTypes.AIR?.defaultState)
-//        }
-//
-//        logger.info("Schematic area was successfully cleared.")
-//    }
 }
