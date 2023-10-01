@@ -1,11 +1,14 @@
 package com.noobnuby.plugin
 
-import com.noobnuby.plugin.command.Start
+import com.noobnuby.plugin.commands.Start
+import com.noobnuby.plugin.commands.Chat
 import com.noobnuby.plugin.events.*
 import com.noobnuby.plugin.init.Schem
+import com.noobnuby.plugin.utils.SetUpKommand
+import io.github.monun.kommand.kommand
 import org.bukkit.plugin.java.JavaPlugin
 
-class Main:JavaPlugin() {
+class Main : JavaPlugin() {
     companion object {
         lateinit var instance: Main
             private set
@@ -13,21 +16,25 @@ class Main:JavaPlugin() {
 
     //TODO : 스코어보드
     //TODO : 명령어 방지
+    //TODO : 게임시작전에 PVP 방지 && 배고픔 다는거 방지
+    //TODO : 몹 스폰 방지 이벤트 개선
     override fun onEnable() {
         instance = this
         logger.info("Enable plugin!")
         saveResource("main.schem", false)
 
         server.pluginManager.apply {
-            registerEvents(JoinQuit(),this@Main)
-            registerEvents(Death(),this@Main)
-            registerEvents(BreakBlock(),this@Main)
-            registerEvents(MobSpawn(),this@Main)
+            registerEvents(JoinQuit(), this@Main)
+            registerEvents(Death(), this@Main)
+            registerEvents(BreakBlock(), this@Main)
+            registerEvents(MobSpawn(), this@Main)
             registerEvents(WeatherChange(), this@Main)
-            registerEvents(BlockOnPlace(),this@Main)
-            getCommand("start")?.setExecutor(Start())
-        }
+            registerEvents(BlockOnPlace(), this@Main)
+            registerEvents(PlayerChat(), this@Main)
+        } // 이예에에엥에ㅔ에
 
         Schem().loadSchem()
+
+        SetUpKommand.setupKommand()
     }
 }
