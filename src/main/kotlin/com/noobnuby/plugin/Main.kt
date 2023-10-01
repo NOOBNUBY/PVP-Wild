@@ -14,6 +14,7 @@ class Main:JavaPlugin() {
     //TODO : 스코어보드
     //TODO : 킬로그
     //TODO : 명령어 방지
+    //TODO : 채팅 방지
     override fun onEnable() {
         instance = this
         logger.info("Enable plugin!")
