@@ -1,11 +1,15 @@
 package com.noobnuby.plugin.command
 
 import com.ibm.icu.text.CaseMap.Title
+import com.noobnuby.plugin.Main
 import com.noobnuby.plugin.init.Schem
+import com.noobnuby.plugin.utils.Variable
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.NamedTextColor
 import net.kyori.adventure.text.format.TextColor
+import org.bukkit.Bukkit
 import org.bukkit.Bukkit.getServer
+import org.bukkit.Bukkit.getWorld
 import org.bukkit.Material
 import org.bukkit.Sound
 import org.bukkit.command.Command
@@ -35,6 +39,10 @@ class Start:CommandExecutor {
                         p.inventory.addItem(ItemStack(Material.BREAD,16))
                     }
 
+                    Variable().isGameStart = true
+
+                    getWorld("world")?.worldBorder?.setCenter(0.0,0.0)
+                    getWorld("world")?.worldBorder?.setSize(1000.0)
                     Schem().deleteSchem()
                     sender.sendMessage(Component.text("게임 시작!"))
                 }
