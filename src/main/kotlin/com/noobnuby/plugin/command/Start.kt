@@ -7,6 +7,7 @@ import net.kyori.adventure.text.format.NamedTextColor
 import net.kyori.adventure.text.format.TextColor
 import org.bukkit.Bukkit.getServer
 import org.bukkit.Material
+import org.bukkit.Sound
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
@@ -25,6 +26,7 @@ class Start:CommandExecutor {
                     for (p in getServer().getOnlinePlayers()) {
                         p.showTitle(net.kyori.adventure.title.Title.title(Component.text("게임 시작!").color(NamedTextColor.GREEN),Component.empty(),
                             net.kyori.adventure.title.Title.Times.of(Duration.ofMillis(500),Duration.ofSeconds(1),Duration.ofMillis(500))))
+                        p.playSound(p.location, Sound.ENTITY_ARROW_SHOOT, 0.5f, 1f)
                         p.inventory.addItem(ItemStack(Material.BOOKSHELF,64))
                         p.inventory.addItem(ItemStack(Material.ENCHANTING_TABLE,1))
                         p.inventory.addItem(ItemStack(Material.BREAD,16))
