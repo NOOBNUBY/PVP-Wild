@@ -14,7 +14,7 @@ class Death: Listener {
         p.gameMode = GameMode.SPECTATOR
 
         if(k != null) {
-            e.deathMessage(Component.text("${k.name} 님이 ${p.name} 님을 처치했습니다!"))
+            e.deathMessage(Component.text("§c§l${k.name} §r님이 §d§l${p.name} §r님을 처치했습니다!"))
         }
     }
 }
