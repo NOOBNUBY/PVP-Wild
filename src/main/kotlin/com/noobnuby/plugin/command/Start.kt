@@ -13,6 +13,8 @@ import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 import org.bukkit.inventory.ItemStack
+import org.bukkit.potion.PotionEffect
+import org.bukkit.potion.PotionEffectType
 import sun.audio.AudioPlayer.player
 import java.sql.Time
 import java.time.Duration
@@ -26,6 +28,7 @@ class Start:CommandExecutor {
                     for (p in getServer().getOnlinePlayers()) {
                         p.showTitle(net.kyori.adventure.title.Title.title(Component.text("게임 시작!").color(NamedTextColor.GREEN),Component.empty(),
                             net.kyori.adventure.title.Title.Times.of(Duration.ofMillis(500),Duration.ofSeconds(1),Duration.ofMillis(500))))
+                        p.addPotionEffect(PotionEffect(PotionEffectType.NIGHT_VISION, Int.MAX_VALUE,9))
                         p.playSound(p.location, Sound.ENTITY_ARROW_SHOOT, 0.5f, 1f)
                         p.inventory.addItem(ItemStack(Material.BOOKSHELF,64))
                         p.inventory.addItem(ItemStack(Material.ENCHANTING_TABLE,1))
