@@ -1,7 +1,5 @@
 package com.noobnuby.plugin
 
-import com.noobnuby.plugin.commands.Start
-import com.noobnuby.plugin.commands.Chat
 import com.noobnuby.plugin.events.*
 import com.noobnuby.plugin.init.Schem
 import com.noobnuby.plugin.utils.SetUpKommand
@@ -16,7 +14,6 @@ class Main : JavaPlugin() {
 
     //TODO : 스코어보드
     //TODO : 명령어 방지
-    //TODO : 게임시작전에 PVP 방지 && 배고픔 다는거 방지
     //TODO : 몹 스폰 방지 이벤트 개선
     override fun onEnable() {
         instance = this
@@ -31,7 +28,7 @@ class Main : JavaPlugin() {
             registerEvents(WeatherChange(), this@Main)
             registerEvents(BlockOnPlace(), this@Main)
             registerEvents(PlayerChat(), this@Main)
-        } // 이예에에엥에ㅔ에
+        }
 
         Schem().loadSchem()
 
