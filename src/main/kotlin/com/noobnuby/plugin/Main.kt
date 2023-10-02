@@ -1,5 +1,6 @@
 package com.noobnuby.plugin
 
+import com.noobnuby.plugin.AutoSmelt.OreBreak
 import com.noobnuby.plugin.events.*
 import com.noobnuby.plugin.init.Schem
 import com.noobnuby.plugin.utils.SetUpKommand
@@ -28,10 +29,10 @@ class Main : JavaPlugin() {
             registerEvents(WeatherChange(), this@Main)
             registerEvents(BlockOnPlace(), this@Main)
             registerEvents(PlayerChat(), this@Main)
+            registerEvents(OreBreak(),this@Main)
         }
 
         Schem().loadSchem()
-
         SetUpKommand.setupKommand()
     }
 }
