@@ -3,10 +3,10 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
     kotlin("jvm") version "1.9.0"
-} // gradle reload좀 해주세요
+}
 
-group = "com.noobnuby.plugin"
-version = "1.0.0"
+group = property("group")!!
+version = property("version")!!
 
 java.toolchain {
     languageVersion.set(JavaLanguageVersion.of(8))
@@ -40,7 +40,6 @@ tasks {
     create<Jar>("paperJar") {
         archiveBaseName.set(rootProject.name)
         archiveClassifier.set("")
-        archiveVersion.set("")
 
         from(sourceSets["main"].output)
     }
