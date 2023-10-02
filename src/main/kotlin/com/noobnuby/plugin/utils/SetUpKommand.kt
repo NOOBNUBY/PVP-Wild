@@ -25,6 +25,5 @@ object SetUpKommand {
                 executes { Start.startCommandHandler(it) }
             }
         }
-
     }
 }
