@@ -1,5 +1,6 @@
 package com.noobnuby.plugin.events
 
+import com.noobnuby.plugin.scoreboard.ScoreBorad
 import net.kyori.adventure.text.Component
 import org.bukkit.Location
 import org.bukkit.event.EventHandler
@@ -14,6 +15,7 @@ class JoinQuit: Listener {
         e.joinMessage(Component.text(""))
         p.teleport(Location(p.world,0.0,150.0,0.0))
         e.player.setBedSpawnLocation(Location(p.world,0.0,150.0,0.0),true)
+        ScoreBorad().showScoreboard(p)
     }
 
     @EventHandler

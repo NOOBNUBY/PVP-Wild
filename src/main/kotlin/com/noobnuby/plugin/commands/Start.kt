@@ -1,5 +1,6 @@
 package com.noobnuby.plugin.commands
 
+import com.noobnuby.plugin.WorldBorder.FarmingTime
 import com.noobnuby.plugin.init.Schem
 import com.noobnuby.plugin.utils.Variable
 import io.github.monun.kommand.KommandContext
@@ -34,9 +35,10 @@ object Start {
 
         Variable.isGameStart = true
 
-        getWorld("world")?.worldBorder?.setCenter(0.0,0.0)
+        getWorld("world")?.worldBorder?.setCenter(0.5,0.5)
         getWorld("world")?.worldBorder?.size = 1000.0
         Schem().deleteSchem()
+        FarmingTime().farmingTime()
         ctx.sender.sendMessage(Component.text("게임 시작!"))
     }
 }
