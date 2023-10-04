@@ -29,7 +29,6 @@ class Main : JavaPlugin() {
             registerEvents(Death(), this@Main)
             registerEvents(BreakBlock(), this@Main)
             registerEvents(MobSpawn(), this@Main)
-            //registerEvents(WeatherChange(), this@Main)
             registerEvents(BlockOnPlace(), this@Main)
             registerEvents(PlayerChat(), this@Main)
             registerEvents(OreBreak(),this@Main)
