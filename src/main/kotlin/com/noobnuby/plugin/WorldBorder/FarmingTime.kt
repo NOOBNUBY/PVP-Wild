@@ -3,6 +3,7 @@ package com.noobnuby.plugin.WorldBorder
 import com.noobnuby.plugin.Main
 import com.noobnuby.plugin.commands.Top
 import com.noobnuby.plugin.scoreboard.ScoreBorad
+import com.noobnuby.plugin.utils.Variable
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.NamedTextColor
 import org.bukkit.Bukkit
@@ -24,6 +25,7 @@ class FarmingTime {
                 if (timer <= 0) {
                     this.cancel()
                     Bukkit.broadcast(Component.text("킬 타임이 시작되었습니다!").color(NamedTextColor.RED))
+                    Variable.isKillTimeStart = true
                     for (p in getServer().onlinePlayers) {
                         Top.TopCommandHandler(p)
                     }
