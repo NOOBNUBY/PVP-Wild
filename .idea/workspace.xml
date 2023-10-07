@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea65383e-e778-4d03-a19f-7f372a5f8a7b" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/KillTime.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/WorldBorder/FarmingTime.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/FarmingTime.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/WorldBorder/KillTime.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/commands/Start.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/commands/Start.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/events/Death.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/events/Death.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/events/JoinQuit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/events/JoinQuit.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/events/MobSpawn.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/scoreboard/ScoreBorad.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/scoreboard/ScoreBorad.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/SetUpKommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/SetUpKommand.kt" afterDir="false" />
+    </list>
+    <list id="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" name="1415w 님이 변경한 내용" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/WorldBorder/FarmingTime.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/FarmingTime.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/events/Death.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/events/Death.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/init/GameRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/init/GameRule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/scoreboard/ScoreBorad.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/scoreboard/ScoreBorad.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/SetUpKommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/SetUpKommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/Variable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/Variable.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NOOBNUBY&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b7a2643d-ad74-4860-8362-c8e81bcba31e" />
+        <option name="url" value="https://github.com/NOOBNUBY/PVP-Wild.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/FarmingTime.kt">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="5" end1="5" start2="5" end2="6" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+        <range start1="10" end1="11" start2="11" end2="11" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="12" end1="14" start2="12" end2="12" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="15" end1="16" start2="13" end2="15" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="17" end1="18" start2="16" end2="17" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="20" end1="21" start2="19" end2="19" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="24" end1="25" start2="22" end2="25" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+        <range start1="31" end1="31" start2="31" end2="34" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+        <range start1="35" end1="36" start2="38" end2="39" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="37" end1="41" start2="40" end2="42" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/Main.kt">
+      <ranges>
+        <range start1="4" end1="4" start2="4" end2="5" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+        <range start1="7" end1="9" start2="8" end2="10" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="17" end1="18" start2="18" end2="22" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="19" end1="20" start2="23" end2="23" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="23" end1="23" start2="26" end2="30" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+        <range start1="30" end1="31" start2="37" end2="37" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/scoreboard/ScoreBorad.kt">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="3" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="3" end1="4" start2="4" end2="8" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="7" end1="7" start2="11" end2="12" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="12" end1="12" start2="17" end2="21" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+        <range start1="13" end1="14" start2="22" end2="42" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="17" end1="20" start2="45" end2="58" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/events/Death.kt">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="4" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+        <range start1="3" end1="3" start2="5" end2="6" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+        <range start1="4" end1="4" start2="7" end2="8" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="9" end1="9" start2="13" end2="18" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="11" end1="11" start2="20" end2="21" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="13" end1="13" start2="23" end2="24" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+        <range start1="15" end1="16" start2="26" end2="28" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="18" end1="18" start2="30" end2="44" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/SetUpKommand.kt">
+      <ranges>
+        <range start1="6" end1="8" start2="6" end2="7" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+        <range start1="11" end1="12" start2="10" end2="10" changelist="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" />
+        <range start1="23" end1="23" start2="21" end2="22" changelist="ea65383e-e778-4d03-a19f-7f372a5f8a7b" />
+      </ranges>
+    </file>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2W1H8eHWj73oKco888eULn7SXnw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/noobnuby/IdeaProjects/PVP-Wild/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="PVP-Wild [paperJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="paperJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PVP-Wild [paperJar]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="ea65383e-e778-4d03-a19f-7f372a5f8a7b" name="변경" comment="" />
+      <created>1695893008976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695893008976</updated>
+      <workItem from="1695893010139" duration="9903000" />
+      <workItem from="1695948455403" duration="2003000" />
+      <workItem from="1695950489487" duration="546000" />
+      <workItem from="1696038082773" duration="22559000" />
+      <workItem from="1696126342783" duration="3797000" />
+      <workItem from="1696166318321" duration="9031000" />
+      <workItem from="1696176742283" duration="427000" />
+      <workItem from="1696203955605" duration="16232000" />
+      <workItem from="1696304125354" duration="10320000" />
+      <workItem from="1696411522198" duration="11017000" />
+      <workItem from="1696517396863" duration="38000" />
+      <workItem from="1696517447626" duration="678000" />
+      <workItem from="1696518129495" duration="46000" />
+      <workItem from="1696518178215" duration="22854000" />
+      <workItem from="1696640536116" duration="5854000" />
+      <workItem from="1696658645469" duration="1130000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.destroystokyo.paper:paper-api" />
+    <option featureType="dependencySupport" implementationName="java:net.kyori:adventure-api" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

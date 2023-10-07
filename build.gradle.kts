@@ -42,5 +42,12 @@ tasks {
         archiveClassifier.set("")
 
         from(sourceSets["main"].output)
+        doLast {
+            copy {
+                val dir = File("/Users/noobnuby/Documents/minecraft-server/1.16.5/plugins")
+                from(archiveFile)
+                into(if (File(dir, archiveFileName.get()).exists()) dir else dir)
+            }
+        }
     }
 }

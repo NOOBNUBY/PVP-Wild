@@ -2,11 +2,12 @@ package com.noobnuby.plugin
 
 import com.noobnuby.plugin.AutoSmelt.OreBreak
 import com.noobnuby.plugin.events.*
+import com.noobnuby.plugin.handlers.GameEnd
 import com.noobnuby.plugin.init.Schem
 import com.noobnuby.plugin.init.GameRule
 import com.noobnuby.plugin.utils.SetUpKommand
-import io.github.monun.kommand.kommand
-import org.bukkit.Bukkit.getWorld
+import com.noobnuby.plugin.handlers.KillTime
+import com.noobnuby.plugin.scheduler.Scheduler
 import org.bukkit.plugin.java.JavaPlugin
 
 class Main : JavaPlugin() {
@@ -15,12 +16,17 @@ class Main : JavaPlugin() {
             private set
     }
 
-    //TODO : 스코어보드
+    lateinit var killTimeHandler: KillTime
+    lateinit var Scheduler: Scheduler
+    lateinit var gameEndHandler: GameEnd
+
     //TODO : 명령어 방지
-    //TODO : 몹 스폰 방지 이벤트 개선
-    //TODO : 공속제거
     override fun onEnable() {
         instance = this
+        killTimeHandler = KillTime
+        gameEndHandler = GameEnd()
+        Scheduler = Scheduler()
+
         logger.info("Enable plugin!")
         saveResource("main.schem", false)
 
@@ -28,7 +34,6 @@ class Main : JavaPlugin() {
             registerEvents(JoinQuit(), this@Main)
             registerEvents(Death(), this@Main)
             registerEvents(BreakBlock(), this@Main)
-            registerEvents(MobSpawn(), this@Main)
             registerEvents(BlockOnPlace(), this@Main)
             registerEvents(PlayerChat(), this@Main)
             registerEvents(OreBreak(),this@Main)

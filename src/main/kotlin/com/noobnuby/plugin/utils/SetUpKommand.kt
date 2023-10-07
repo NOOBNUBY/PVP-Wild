@@ -4,12 +4,10 @@ import com.noobnuby.plugin.Main
 import com.noobnuby.plugin.commands.Start
 import com.noobnuby.plugin.commands.Chat
 import com.noobnuby.plugin.commands.Top
-import com.sun.org.apache.xpath.internal.operations.Bool
-import io.github.monun.kommand.argument.TargetArgument.Companion.player
+import com.noobnuby.plugin.events.Death
 import io.github.monun.kommand.kommand
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.NamedTextColor
-import net.kyori.adventure.text.format.TextColor
 import org.bukkit.Sound
 import org.bukkit.entity.Player
 
@@ -21,6 +19,7 @@ object SetUpKommand {
         plugin.kommand {
             register("chat") {
                 require { it.isOp }
+
                 then("enable") {
                     executes { Chat.enableChat(it) }
                 }
