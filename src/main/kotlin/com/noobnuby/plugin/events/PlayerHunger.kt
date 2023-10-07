@@ -8,7 +8,7 @@ import org.bukkit.event.entity.FoodLevelChangeEvent
 class PlayerHunger:Listener {
     @EventHandler
     fun onPlayerHunger(e: FoodLevelChangeEvent) {
-        if(Variable.isKillTimeStart == false) {
+        if(!Variable.isKillTimeStart) {
             e.isCancelled = true
         }
     }

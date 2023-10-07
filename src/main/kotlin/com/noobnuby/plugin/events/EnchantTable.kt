@@ -1,6 +1,5 @@
 package com.noobnuby.plugin.events
 
-
 import org.bukkit.Material
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -9,12 +8,6 @@ import org.bukkit.event.inventory.InventoryCloseEvent
 import org.bukkit.event.inventory.InventoryOpenEvent
 import org.bukkit.inventory.EnchantingInventory
 import org.bukkit.inventory.ItemStack
-
-
-
-
-
-
 
 class EnchantTable:Listener {
     @EventHandler

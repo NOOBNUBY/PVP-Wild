@@ -60,6 +60,6 @@ class Schem {
             editSession.setBlocks(regionToClear, BlockTypes.AIR?.defaultState)
         }
 
-        Bukkit.getLogger().info("성공적으로 Schem구조물이 없앴습니다!")
+        Bukkit.getLogger().info("성공적으로 Schem구조물을 없앴습니다!")
     }
 }

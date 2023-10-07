@@ -4,7 +4,6 @@ import com.noobnuby.plugin.Main
 import com.noobnuby.plugin.commands.Start
 import com.noobnuby.plugin.commands.Chat
 import com.noobnuby.plugin.commands.Top
-import com.noobnuby.plugin.events.Death
 import io.github.monun.kommand.kommand
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.NamedTextColor
@@ -14,7 +13,7 @@ import org.bukkit.entity.Player
 object SetUpKommand {
     fun setupKommand() {
         val plugin = Main.instance
-        val TopCommandData = HashMap<Player, Boolean>()
+        val topCommandData = HashMap<Player, Boolean>()
 
         plugin.kommand {
             register("chat") {
@@ -37,8 +36,8 @@ object SetUpKommand {
                 executes {
                     val player = it.sender as Player
 
-                    if (!TopCommandData.containsKey(player)) {
-                        TopCommandData[player] = true
+                    if (!topCommandData.containsKey(player)) {
+                        topCommandData[player] = true
                         player.sendMessage(Component.text("지상으로 이동하였습니다.").color(NamedTextColor.YELLOW))
                         Top.TopCommandHandler(player)
                     } else {

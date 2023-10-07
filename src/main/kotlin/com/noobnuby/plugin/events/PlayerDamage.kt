@@ -10,7 +10,7 @@ class PlayerDamage:Listener {
     @EventHandler
     fun onPlayerDamage(e: EntityDamageEvent) {
         if(e.entity is Player) {
-            if(Variable.isKillTimeStart == false) {
+            if(!Variable.isKillTimeStart) {
                 e.isCancelled = true
             }
         }

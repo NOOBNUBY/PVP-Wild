@@ -8,7 +8,7 @@ import org.bukkit.event.block.BlockBreakEvent
 class BreakBlock: Listener {
     @EventHandler
     fun onBreakBlock(e: BlockBreakEvent) {
-        if(Variable.isGameStart == false) {
+        if(!Variable.isGameStart) {
             e.isCancelled = true
         }
     }
