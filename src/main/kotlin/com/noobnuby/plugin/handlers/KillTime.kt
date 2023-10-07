@@ -1,10 +1,7 @@
 package com.noobnuby.plugin.handlers
 
 import com.noobnuby.plugin.Main
-import com.noobnuby.plugin.scoreboard.ScoreBorad
-import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
-import org.bukkit.ChatColor
 
 object KillTime {
     val plugin = Main.instance

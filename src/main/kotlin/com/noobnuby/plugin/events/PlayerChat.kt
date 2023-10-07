@@ -8,7 +8,7 @@ import org.bukkit.event.Listener
 class PlayerChat: Listener {
     @EventHandler
     fun onPlayerChat(e: AsyncChatEvent) {
-        if(Variable.ChatEnable == false) {
+        if(!Variable.chatEnable) {
             e.isCancelled = true
         }
     }

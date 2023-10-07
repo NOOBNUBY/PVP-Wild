@@ -15,7 +15,7 @@ object Scheduler {
         taskId = Bukkit.getScheduler().runTaskTimer(plugin, Runnable {
             timer++
             minutes = timer / 60
-            var sec = timer % 60
+            val sec = timer % 60
 
             seconds = "$sec".padStart(2, '0')
 
