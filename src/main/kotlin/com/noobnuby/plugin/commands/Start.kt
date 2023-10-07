@@ -37,10 +37,10 @@ object Start {
         Variable.isGameStart = true
 
         getWorld("world")?.worldBorder?.setCenter(0.5,0.5)
-        getWorld("world")?.worldBorder?.size = 999.5
+        getWorld("world")?.worldBorder?.size = 999.0
         Schem().deleteSchem()
-        FarmingTime.farmingTime()
-        Main.instance.Scheduler.runScheduler()
+        Main.instance.farminTime.startSchedule()
+        Main.instance.scheduler.runScheduler()
         ctx.sender.sendMessage(Component.text("게임 시작!"))
     }
 }

@@ -4,11 +4,13 @@ import com.noobnuby.plugin.Main
 import com.noobnuby.plugin.scoreboard.ScoreBorad
 import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
+import org.bukkit.ChatColor
 
 object KillTime {
     val plugin = Main.instance
     private var taskId: Int? = null
-    var timer = 10 //60 * 2
+    val initTimer = 60 * 2
+    var timer = initTimer
     var minutes: Int = 0
     var seconds: String = "00"
 
@@ -25,23 +27,21 @@ object KillTime {
 
             val wb = world.worldBorder
             minutes  = timer / 60
-            var sec = timer % 60
+            val sec = timer % 60
 
             seconds = "$sec".padStart(2, '0')
 
-            Bukkit.broadcast(Component.text("§a${minutes}:${seconds}"))
-
             when (wb.size) {
-                400.0 -> wbSizeMin = 100.0
-                100.0 -> wbSizeMin = 50.0
-                50.0 -> wbSizeMin = 45.0
+                399.0 -> wbSizeMin = 100.0
+                99.0 -> wbSizeMin = 50.0
+                49.0 -> wbSizeMin = 44.0
                 5.0 -> wbSizeMin = 4.0
                 1.0 -> stopSchedule()
             }
 
             if (timer <= 0) {
                 wb.setSize(wb.size - wbSizeMin,5)
-                timer = 10 //60 * 2
+                timer = initTimer
             }
         }, 0, 20).taskId // 2 minutes
     }

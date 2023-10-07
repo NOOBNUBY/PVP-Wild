@@ -19,8 +19,8 @@ class JoinQuit: Listener {
         p.teleport(Location(p.world,0.0,150.0,0.0))
         e.player.setBedSpawnLocation(Location(p.world,0.0,150.0,0.0),true)
         ScoreBorad().showScoreboard(p)
-        attribute?.baseValue?.plus(12f)
 
+        attribute?.baseValue = 16.0
     }
 
     @EventHandler

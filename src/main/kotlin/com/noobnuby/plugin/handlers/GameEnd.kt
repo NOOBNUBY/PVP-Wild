@@ -1,20 +1,17 @@
 package com.noobnuby.plugin.handlers
 
 import com.noobnuby.plugin.Main
-import com.noobnuby.plugin.scoreboard.ScoreboardSchedule
 import com.noobnuby.plugin.utils.Variable
 import net.kyori.adventure.title.Title
 import org.bukkit.Bukkit
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.NamedTextColor
-import org.bukkit.ChatColor
 import org.bukkit.Sound
 
 class GameEnd {
     val plugin = Main.instance
 
     fun run() {
-        ScoreboardSchedule.stop()
         plugin.killTimeHandler.stopSchedule()
 
         Bukkit.getOnlinePlayers().forEach {
@@ -26,7 +23,7 @@ class GameEnd {
                         .color(NamedTextColor.YELLOW)
                         .append(
                             Component.text("(이)가 승리했습니다!").color(NamedTextColor.WHITE)
-                        ) // Subtitle
+                        )
                 )
             )
         }
