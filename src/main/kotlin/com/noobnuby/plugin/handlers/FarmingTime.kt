@@ -26,7 +26,7 @@ object FarmingTime {
                 Bukkit.getOnlinePlayers().forEach {
                     Top.TopCommandHandler(it)
                     it.playSound(it.location, Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 0.5f, 1f)
-                    it.showTitle(net.kyori.adventure.title.Title.title(Component.text("칼타임 시작!").color(NamedTextColor.RED),Component.empty(),
+                    it.showTitle(net.kyori.adventure.title.Title.title(Component.text("킬타임 시작!").color(NamedTextColor.RED),Component.empty(),
                         net.kyori.adventure.title.Title.Times.of(Duration.ofMillis(500), Duration.ofSeconds(1), Duration.ofMillis(500))))
                 }
                 Scheduler.stopScheduler()

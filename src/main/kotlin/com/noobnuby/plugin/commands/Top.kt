@@ -1,8 +1,5 @@
 package com.noobnuby.plugin.commands
 
-import io.github.monun.kommand.KommandContext
-import org.bukkit.Bukkit
-import org.bukkit.Location
 import org.bukkit.entity.Player
 
 object Top {

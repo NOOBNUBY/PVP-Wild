@@ -37,15 +37,13 @@ object SetUpKommand {
                 executes {
                     val player = it.sender as Player
 
-                    if(!Variable.isKillTimeStart && Variable.isGameStart) {
-                        if (!TopCommandData.containsKey(player)) {
-                            TopCommandData[player] = true
-                            player.sendMessage(Component.text("지상으로 이동하였습니다.").color(NamedTextColor.YELLOW))
-                            Top.TopCommandHandler(player)
-                        } else {
-                            player.playSound(player.location,Sound.ENTITY_ENDERMAN_TELEPORT,0.5f,1f)
-                            player.sendMessage(Component.text("이미 사용한 명령어입니다.").color(NamedTextColor.RED))
-                        }
+                    if (!TopCommandData.containsKey(player)) {
+                        TopCommandData[player] = true
+                        player.sendMessage(Component.text("지상으로 이동하였습니다.").color(NamedTextColor.YELLOW))
+                        Top.TopCommandHandler(player)
+                    } else {
+                        player.playSound(player.location,Sound.ENTITY_ENDERMAN_TELEPORT,0.5f,1f)
+                        player.sendMessage(Component.text("이미 사용한 명령어입니다.").color(NamedTextColor.RED))
                     }
                 }
             }

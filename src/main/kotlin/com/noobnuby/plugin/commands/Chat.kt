@@ -9,11 +9,11 @@ import io.github.monun.kommand.KommandContext
 object Chat {
     fun enableChat(ctx: KommandContext) {
         Bukkit.broadcast(Component.text("채팅이 활성화되었습니다.").color(NamedTextColor.GREEN))
-        Variable.ChatEnable = true
+        Variable.chatEnable = true
     }
 
     fun disableChat(ctx: KommandContext) {
         Bukkit.broadcast(Component.text("채팅이 비활성화되었습니다.").color(NamedTextColor.RED))
-        Variable.ChatEnable = false
+        Variable.chatEnable = false
     }
 }
