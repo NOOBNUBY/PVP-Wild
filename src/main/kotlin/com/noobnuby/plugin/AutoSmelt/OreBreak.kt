@@ -17,10 +17,9 @@ class OreBreak: Listener {
         val hand: ItemStack = e.player.inventory.itemInMainHand
 
         if(p.gameMode != GameMode.SURVIVAL) return
-        if(Variable.isGameStart != true) return
+        if (hand.containsEnchantment(Enchantment.SILK_TOUCH)) return
 
         when {
-            hand.containsEnchantment(Enchantment.SILK_TOUCH) -> return
             block == Material.IRON_ORE || block == Material.GOLD_ORE || block == Material.EMERALD_ORE -> {
                 e.isDropItems = false
 

@@ -6,15 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ea65383e-e778-4d03-a19f-7f372a5f8a7b" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/commands/Start.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/commands/Start.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/events/JoinQuit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/events/JoinQuit.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/FarmingTime.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/FarmingTime.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/GameEnd.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/GameEnd.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/AutoSmelt/OreBreak.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/AutoSmelt/OreBreak.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/KillTime.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/KillTime.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/scheduler/Scheduler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/scheduler/Scheduler.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/scoreboard/ScoreBorad.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/scoreboard/ScoreBorad.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/scoreboard/ScoreboardSchedule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/SetUpKommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/SetUpKommand.kt" afterDir="false" />
     </list>
     <list id="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" name="1415w 님이 변경한 내용" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,6 +99,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.noobnuby.plugin.handlers" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="PVP-Wild [paperJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -171,7 +168,9 @@
       <workItem from="1696640536116" duration="5854000" />
       <workItem from="1696658645469" duration="1130000" />
       <workItem from="1696662713923" duration="986000" />
-      <workItem from="1696668457337" duration="5808000" />
+      <workItem from="1696668457337" duration="7250000" />
+      <workItem from="1696683800976" duration="1762000" />
+      <workItem from="1696685648492" duration="15000" />
     </task>
     <servers />
   </component>

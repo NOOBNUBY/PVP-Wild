@@ -40,7 +40,7 @@ object KillTime {
             }
 
             if (timer <= 0) {
-                wb.setSize(wb.size - wbSizeMin,5)
+                wb.setSize(wb.size - wbSizeMin,30)
                 timer = initTimer
             }
         }, 0, 20).taskId // 2 minutes
