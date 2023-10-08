@@ -7,8 +7,6 @@
     <list default="true" id="ea65383e-e778-4d03-a19f-7f372a5f8a7b" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/AutoSmelt/OreBreak.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/AutoSmelt/OreBreak.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/KillTime.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/handlers/KillTime.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/SetUpKommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/noobnuby/plugin/utils/SetUpKommand.kt" afterDir="false" />
     </list>
     <list id="4c8b0db8-2bb1-461d-b67d-f4aaeed23e54" name="1415w 님이 변경한 내용" comment="" />
     <option name="SHOW_DIALOG" value="false" />
