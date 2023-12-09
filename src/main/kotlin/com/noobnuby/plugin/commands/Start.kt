@@ -18,7 +18,6 @@ import java.time.Duration
 object Start {
     val plugin = Main.instance
     fun startCommandHandler(ctx: KommandContext) {
-
         for (p in getServer().onlinePlayers) {
             p.showTitle(net.kyori.adventure.title.Title.title(Component.text("게임 시작!").color(NamedTextColor.GREEN),Component.empty(),
                 net.kyori.adventure.title.Title.Times.of(Duration.ofMillis(500),Duration.ofSeconds(1),Duration.ofMillis(500))))

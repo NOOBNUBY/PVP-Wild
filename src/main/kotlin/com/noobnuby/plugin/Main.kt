@@ -43,6 +43,7 @@ class Main : JavaPlugin() {
             registerEvents(PlayerDamage(),this@Main)
             registerEvents(PlayerHunger(),this@Main)
             registerEvents(EnchantTable(),this@Main)
+            registerEvents(PlayerMove(),this@Main)
         }
 
         GameRule().setGameRule()

@@ -5,6 +5,7 @@ import com.noobnuby.plugin.utils.Variable
 import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
 import org.bukkit.GameMode
+import org.bukkit.Location
 import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -23,7 +24,6 @@ class Death: Listener {
         val k = p.killer
 
         p.gameMode = GameMode.SPECTATOR
-
         if (k != null) {
             killCount[k] = killCount.getOrDefault(k,0) + 1
             e.deathMessage(Component.text("§c§l${k.name} §r님이 §d§l${p.name} §r님을 처치했습니다!"))

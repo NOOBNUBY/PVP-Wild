@@ -1,6 +1,7 @@
 package com.noobnuby.plugin.events
 
 import com.noobnuby.plugin.scoreboard.ScoreBorad
+import com.noobnuby.plugin.utils.Variable
 import net.kyori.adventure.text.Component
 import org.bukkit.Location
 import org.bukkit.attribute.Attribute
@@ -14,13 +15,13 @@ class JoinQuit: Listener {
     fun onJoin(e: PlayerJoinEvent) {
         val p = e.player
         val attribute = p.getAttribute(Attribute.GENERIC_ATTACK_SPEED)
-
         e.joinMessage(Component.text(""))
-        p.teleport(Location(p.world,0.0,150.0,0.0))
+        if(!Variable.isGameStart)
+            p.teleport(Location(p.world,0.0,150.0,0.0))
         e.player.setBedSpawnLocation(Location(p.world,0.0,150.0,0.0),true)
         ScoreBorad().showScoreboard(p)
 
-        attribute?.baseValue = 16.0
+//        attribute?.baseValue = 16.0
     }
 
     @EventHandler

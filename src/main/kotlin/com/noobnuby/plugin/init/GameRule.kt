@@ -10,6 +10,7 @@ class GameRule {
         world.time = 1000
         world.setStorm(false)
 
+        world.setGameRule(GameRule.ANNOUNCE_ADVANCEMENTS,false)
         world.setGameRule(GameRule.DO_DAYLIGHT_CYCLE,false)
         world.setGameRule(GameRule.DO_WEATHER_CYCLE,false)
         world.setGameRule(GameRule.DO_IMMEDIATE_RESPAWN,true)

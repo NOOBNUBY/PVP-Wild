@@ -17,12 +17,11 @@ class OreBreak : Listener {
         val hand: ItemStack = e.player.inventory.itemInMainHand
         val rd = Random()
 
-        if (!hand.containsEnchantment(Enchantment.LOOT_BONUS_BLOCKS)) return
-        if (p.gameMode != GameMode.SURVIVAL) return
-        e.isDropItems = false
-
-
         if (block == Material.IRON_ORE || block == Material.GOLD_ORE || block == Material.EMERALD_ORE) {
+            if (hand.containsEnchantment(Enchantment.SILK_TOUCH)) return
+            if (p.gameMode != GameMode.SURVIVAL) return
+            e.isDropItems = false
+
             var amount = 1
 
             when (hand.getEnchantmentLevel(Enchantment.LOOT_BONUS_BLOCKS)) {
